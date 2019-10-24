@@ -16,4 +16,5 @@ logger.on('start', () => console.log('Starting'));
 logger.on('finish', () => console.log('Finishing'));
 logger.on('finish', () => console.log('It\'s Done'));
 
-logger.execute(() => console.log('hello world'));
+// logger.execute(() => console.log('hello world'));
+logger.execute(() => setTimeout(() => console.log('hello world'), 500));
