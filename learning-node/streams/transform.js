@@ -1,7 +1,7 @@
 const { Transform } = require('stream');
 
 const transformStream = new Transform({
-  transform(chunk, enconding, callback) {
+  transform(chunk, encoding, callback) {
     this.push(chunk.toString().toUpperCase());
     callback();
   }
