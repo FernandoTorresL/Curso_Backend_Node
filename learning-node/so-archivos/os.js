@@ -1,11 +1,11 @@
 const os = require ("os");
 
-// console.log("CPU info", os.cpus());
+console.log("CPU info", os.cpus());
 
-// console.log("IP address", os.networkInterfaces().en0.map(i => i.address));
-// console.log("IP address", os.networkInterfaces());
+console.log("IP address", os.networkInterfaces().en0.map(i => i.address));
+console.log("IP address", os.networkInterfaces());
 
-// console.log("Free memory", os.freemem());
+console.log("Free memory", os.freemem());
 
 console.log("Type", os.type());
 console.log("SO version", os.release());
